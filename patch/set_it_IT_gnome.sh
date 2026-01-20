@@ -118,7 +118,7 @@ in the '/root/backup' directory, if they do not already exist.\n"
   fi
 
   # Modify for Italian language in central/system dconf (for new user)
-  sed -i "s/name='Themes settings'/name='Impostazioni temi/g"  "$app_folders"
+  sed -i "s/name='Themes settings'/name='Impostazioni temi'/g"  "$app_folders"
   sed -i "s/name='Office'/name='Ufficio'/g" "$app_folders"
   sed -i "s/name='Graphics'/name='Grafica'/g" "$app_folders"
   sed -i "s/name='Programming'/name='Programmazione'/g"  "$app_folders"
@@ -130,7 +130,7 @@ in the '/root/backup' directory, if they do not already exist.\n"
   sed -i "s/'name': 'Office'/'name': 'Ufficio'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Graphics'/'name': 'Grafica'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Accessories'/'name': 'Accessori'/g" "$extensions_arcmenu"
-  sed -i "s/'name': 'Themes settings'/'name': 'Impostazioni temi/g" "$extensions_arcmenu"
+  sed -i "s/'name': 'Themes settings'/'name': 'Impostazioni temi'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Internet'/'name': 'Internet'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Multimedia'/'name': 'Multimedia'/g" "$extensions_arcmenu"
   sed -i "s/sources=\[('xkb', 'us')]\s*/sources=[('xkb', 'it'), ('xkb', 'us')]/g" "$input_sources"
@@ -158,7 +158,7 @@ set_for_current_user_EN_IT() {
 
     # Now modify in dconf.ini file groups programming name for Italian language
     printf "Now modify the group names for app in dconf.ini file for Italian language\n"
-    sudo -u "$username" sed -i "s/name='Themes settings'/name='Impostazioni temi/g"  "$dconf_file"
+    sudo -u "$username" sed -i "s/name='Themes settings'/name='Impostazioni temi'/g"  "$dconf_file"
     sudo -u "$username" sed -i "s/name='Office'/name='Ufficio'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/name='Graphics'/name='Grafica'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/name='Programming'/name='Programmazione'/g" "$dconf_file"
@@ -170,7 +170,7 @@ set_for_current_user_EN_IT() {
     sudo -u "$username" sed -i "s/'name': 'Office'/'name': 'Ufficio'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Graphics'/'name': 'Grafica'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Accessories'/'name': 'Accessori'/g" "$dconf_file"
-    sudo -u "$username" sed -i "s/'name': 'Themes settings'/'name': 'Impostazioni temi/g" "$dconf_file"
+    sudo -u "$username" sed -i "s/'name': 'Themes settings'/'name': 'Impostazioni temi'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Internet'/'name': 'Internet'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Multimedia'/'name': 'Multimedia'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/sources=\[('xkb', 'us')]\s*/sources=[('xkb', 'it'), ('xkb', 'us')]/g" "$dconf_file"
@@ -213,7 +213,7 @@ set_for_current_user_EN_IT() {
 
     # Now modify in dconf.ini file groups programming name for Italian language
     printf "Now modify the group names for app in dconf.ini file for Italian language\n"
-    sed -i "s/name='Themes settings'/name='Impostazioni temi/g"  "$dconf_file"
+    sed -i "s/name='Themes settings'/name='Impostazioni temi'/g"  "$dconf_file"
     sed -i "s/name='Office'/name='Ufficio'/g" "$dconf_file"
     sed -i "s/name='Graphics'/name='Grafica'/g" "$dconf_file"
     sed -i "s/name='Programming'/name='Programmazione'/g" "$dconf_file"
@@ -225,7 +225,7 @@ set_for_current_user_EN_IT() {
     sed -i "s/'name': 'Office'/'name': 'Ufficio'/g" "$dconf_file"
     sed -i "s/'name': 'Graphics'/'name': 'Grafica'/g" "$dconf_file"
     sed -i "s/'name': 'Accessories'/'name': 'Accessori'/g" "$dconf_file"
-    sed -i "s/'name': 'Themes settings'/'name': 'Impostazioni temi/g" "$dconf_file"
+    sed -i "s/'name': 'Themes settings'/'name': 'Impostazioni temi'/g" "$dconf_file"
     sed -i "s/'name': 'Internet'/'name': 'Internet'/g" "$dconf_file"
     sed -i "s/'name': 'Multimedia'/'name': 'Multimedia'/g" "$dconf_file"
     sed -i "s/sources=\[('xkb', 'us')]\s*/sources=[('xkb', 'it'), ('xkb', 'us')]/g" "$dconf_file"
@@ -257,7 +257,7 @@ in the '/root/backup' directory, if they do not already exist.\n"
   fi
 
   # Modify for English language in dconf for the system
-  sed -i "s/name='Impostazioni temi/name='Themes settings'/g" "$app_folders"
+  sed -i "s/name='Impostazioni temi'/name='Themes settings'/g" "$app_folders"
   sed -i "s/name='Ufficio'/name='Office'/g" "$app_folders"
   sed -i "s/name='Grafica'/name='Graphics'/g" "$app_folders"
   sed -i "s/name='Programmazione'/name='Programming'/g" "$app_folders"
@@ -269,7 +269,7 @@ in the '/root/backup' directory, if they do not already exist.\n"
   sed -i "s/'name': 'Ufficio'/'name': 'Office'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Grafica'/'name': 'Graphics'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Accessori'/'name': 'Accessories'/g" "$extensions_arcmenu"
-  sed -i "s/'name': 'Impostazioni temi/'name': 'Themes settings'/g"  "$extensions_arcmenu"
+  sed -i "s/'name': 'Impostazioni temi'/'name': 'Themes settings'/g"  "$extensions_arcmenu"
   sed -i "s/'name': 'Internet'/'name': 'Internet'/g" "$extensions_arcmenu"
   sed -i "s/'name': 'Multimedia'/'name': 'Multimedia'/g"  "$extensions_arcmenu"
   sed -i "s/sources=\[('xkb', 'it'), ('xkb', 'us')]\s*/sources=[('xkb', 'us')]/g"  "$input_sources"
@@ -297,7 +297,7 @@ set_for_current_user_IT_EN() {
 
     # Now modify in dconf.ini file groups programming name for English language
     printf "Now modify the group names for app in dconf.ini file for English language\n"
-    sudo -u "$username" sed -i "s/name='Impostazioni temi/name='Themes settings'/g" "$dconf_file"
+    sudo -u "$username" sed -i "s/name='Impostazioni temi'/name='Themes settings'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/name='Ufficio'/name='Office'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/name='Grafica'/name='Graphics'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/name='Programmazione'/name='Programming'/g" "$dconf_file"
@@ -309,7 +309,7 @@ set_for_current_user_IT_EN() {
     sudo -u "$username" sed -i "s/'name': 'Ufficio'/'name': 'Office'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Grafica'/'name': 'Graphics'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Accessori'/'name': 'Accessories'/g" "$dconf_file"
-    sudo -u "$username" sed -i "s/'name': 'Impostazioni temi/'name': 'Themes settings'/g" "$dconf_file"
+    sudo -u "$username" sed -i "s/'name': 'Impostazioni temi'/'name': 'Themes settings'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Internet'/'name': 'Internet'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/'name': 'Multimedia'/'name': 'Multimedia'/g" "$dconf_file"
     sudo -u "$username" sed -i "s/sources=\[('xkb', 'it'), ('xkb', 'us')]\s*/sources=[('xkb', 'us')]/g" "$dconf_file"
@@ -351,7 +351,7 @@ set_for_current_user_IT_EN() {
 
     # Now modify in dconf.ini file groups programming name for English language
     printf "Now modify the group names for app in dconf.ini file for English language\n"
-    sed -i "s/name='Impostazioni temi/name='Themes settings'/g" "$dconf_file"
+    sed -i "s/name='Impostazioni temi'/name='Themes settings'/g" "$dconf_file"
     sed -i "s/name='Ufficio'/name='Office'/g" "$dconf_file"
     sed -i "s/name='Grafica'/name='Graphics'/g" "$dconf_file"
     sed -i "s/name='Programmazione'/name='Programming'/g" "$dconf_file"
@@ -363,7 +363,7 @@ set_for_current_user_IT_EN() {
     sed -i "s/'name': 'Ufficio'/'name': 'Office'/g" "$dconf_file"
     sed -i "s/'name': 'Grafica'/'name': 'Graphics'/g" "$dconf_file"
     sed -i "s/'name': 'Accessori'/'name': 'Accessories'/g" "$dconf_file"
-    sed -i "s/'name': 'Impostazioni temi/'name': 'Themes settings'/g" "$dconf_file"
+    sed -i "s/'name': 'Impostazioni temi'/'name': 'Themes settings'/g" "$dconf_file"
     sed -i "s/'name': 'Internet'/'name': 'Internet'/g" "$dconf_file"
     sed -i "s/'name': 'Multimedia'/'name': 'Multimedia'/g" "$dconf_file"
     sed -i "s/sources=\[('xkb', 'it'), ('xkb', 'us')]\s*/sources=[('xkb', 'us')]/g" "$dconf_file"
