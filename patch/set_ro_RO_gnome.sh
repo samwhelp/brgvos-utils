@@ -53,7 +53,7 @@ username=$(logname)
 
 function display_help() {
   echo -e "${bold}${cyan}Usage:${reset}"
-  echo -e "  ./set_ro_RO_gnome.sh [PARAMETER]"
+  echo -e "\tset_ro_RO_gnome.sh [PARAMETER]"
   echo -e "\n${bold}${cyan}Description:${reset}"
   echo -e "  This script add modify for Romanian language, from English to Romanian, in dconf for the system and/or actual user"
   echo -e "  Also, set as keyboard 'ro' and install some localized packages xbps."
