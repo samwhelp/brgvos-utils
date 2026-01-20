@@ -53,10 +53,10 @@ The last command display next info help messages:
 ```text
 Run the script for current user, only for parameters '2', '4' or '--help'
 Usage:
-  ./set_pt_BR_gnome.sh [PARAMETER]
+        set_pt_BR_gnome.sh [PARAMETER]
 
 Description:
-  This script add modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf for all new users and/or actual user
+  This script add modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf for the system and/or actual user
   Also, set as keyboard 'br' and install some localized packages xbps.
   If a the user provide an ARGUMENT, like '1' or '2' or '1 2' this script is run directly
   If a the user not provide an ARGUMENT appear a menu with some options.
@@ -64,19 +64,19 @@ Description:
 Options:
      With PARAMETER     Modify for Portuguese (Brazilian) language, for all new user or actual user.
   Without PARAMETER     Is open a options menu with next options:
-  Option 1 - Modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf for
-             all new users, add 'br' keyboard and add additional packages for localized language.
-  Option 2 - Modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf for
-             current user, add 'br' keyboard and add additional packages for localized language.
-  Option 3 - Modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf for
-             all new users and current user, add 'br' keyboard and add additional packages for localized language.
-  Option 4 - Modify for English language, from Portuguese (Brazilian) to English, in dconf for
-             all new users, set 'us' default keyboard and 'br' secondary keyboard.
+  Option 1 - Modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf,
+             for the system, add 'br' keyboard and add additional packages for localized language.
+  Option 2 - Modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf,
+             for the current user, add 'br' keyboard and add additional packages for localized language.
+  Option 3 - Modify for Portuguese (Brazilian) language, from English to Portuguese (Brazilian), in dconf,
+             for the system and the current user, add 'br' keyboard and add additional packages for localized language.
+  Option 4 - Modify for English language, from Portuguese (Brazilian) to English, in dconf,
+             for the system, set 'us' default keyboard and 'br' secondary keyboard.
   Option 5 - Enable Portuguese (Brazilian) language in libc-locales and install additional packages for localized language.
-  Option 6 - Modify for English language, from Portuguese (Brazilian) to English, in dconf for
-             current user, set 'us' default keyboard and 'br' secondary keyboard.
-  Option 7 - Modify for English language, from Portuguese (Brazilian) to English, in dconf for
-             all new users and current user, set 'us' default keyboard and 'br' secondary keyboard.
+  Option 6 - Modify for English language, from Portuguese (Brazilian) to English, in dconf,
+             for the current user, set 'us' default keyboard and 'br' secondary keyboard.
+  Option 7 - Modify for English language, from Portuguese (Brazilian) to English, in dconf,
+             for the system and the current user, set 'us' default keyboard and 'br' secondary keyboard.
   Option 8 - Exit from script.
 
 Examples:
